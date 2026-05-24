@@ -49,6 +49,7 @@ JOIN urls u ON u.id = v.url
 WHERE (
     u.url LIKE '%nkbihfbeogaeaoehlefnkodbefgpgknn%'
     OR u.url LIKE '%hyperunit.xyz%'
+    OR u.url LIKE '%metamask%'
   )
   AND datetime(v.visit_time/1000000-11644473600, 'unixepoch')
       BETWEEN '2026-05-20 00:00:00' AND '2026-05-22 23:59:59'
